@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@color/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/lnrAboutBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/transperent_shape"
+            android:gravity="center">
+            <ImageView
+                android:gravity="center"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:background="@drawable/back_arrow"
+                android:backgroundTint="@color/white"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="About Us"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="18dp"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="177dp"
+        android:layout_height="177dp"
+        android:background="@mipmap/icon"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="All In One - Calculation Tool is a versatile app that simplifies complex calculations. It combines various calculators into a single, user-friendly interface, providing quick and accurate solutions for a wide range of mathematical and practical needs."
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/txtShare"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:background="@drawable/rectshape"
+            android:text="Share App"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/txtRate"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:background="@drawable/rectshape"
+            android:text="Rate App"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

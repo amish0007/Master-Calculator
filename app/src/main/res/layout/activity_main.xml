@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@color/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="177dp"
+        android:layout_height="177dp"
+        android:background="@mipmap/icon"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center">
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/lnrStart"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rectshape"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Start App"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="30dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1.7"
+            android:text="Click here"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:textColor="@color/white"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/forward_arrow"
+            android:backgroundTint="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnrAbout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rectshape"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="About Us"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="30dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1.7"
+            android:text="Know more"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:textColor="@color/white"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/forward_arrow"
+            android:backgroundTint="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/txtShare"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:background="@drawable/rectshape"
+            android:text="Share App"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/txtRate"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:background="@drawable/rectshape"
+            android:text="Rate App"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>
