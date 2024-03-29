@@ -6,11 +6,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,14 +23,14 @@ public class MainActivity extends AppCompatActivity {
         lnrStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent StartApp = new Intent(MainActivity.this,choosecalcActivity.class);
+                Intent StartApp = new Intent(MainActivity.this, ChooseCalcActivity.class);
                 startActivity(StartApp);
             }
         });
         lnrAbout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent AboutUs = new Intent(MainActivity.this,aboutusActivity.class);
+                Intent AboutUs = new Intent(MainActivity.this, AboutUsActivity.class);
                 startActivity(AboutUs);
             }
         });

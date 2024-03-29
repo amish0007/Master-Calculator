@@ -7,7 +7,7 @@ import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class choosecalcActivity extends AppCompatActivity {
+public class ChooseCalcActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,7 @@ public class choosecalcActivity extends AppCompatActivity {
         lnrMutual.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent MutualIntent = new Intent(choosecalcActivity.this,mutualFundActivity.class);
+                Intent MutualIntent = new Intent(ChooseCalcActivity.this, MutualFundActivity.class);
                 startActivity(MutualIntent);
             }
         });
@@ -40,35 +40,35 @@ public class choosecalcActivity extends AppCompatActivity {
         lnrInterest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent InterestIntent = new Intent(choosecalcActivity.this,interestActivity.class);
+                Intent InterestIntent = new Intent(ChooseCalcActivity.this, InterestActivity.class);
                 startActivity(InterestIntent);
             }
         });
         lnrDiscount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent DiscountIntent = new Intent(choosecalcActivity.this,discountActivity.class);
+                Intent DiscountIntent = new Intent(ChooseCalcActivity.this, DiscountActivity.class);
                 startActivity(DiscountIntent);
             }
         });
         lnrEmi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent EmiIntent = new Intent(choosecalcActivity.this,emiActivity.class);
+                Intent EmiIntent = new Intent(ChooseCalcActivity.this, EmiActivity.class);
                 startActivity(EmiIntent);
             }
         });
         lnrSchoolResult.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent SchoolResultIntent = new Intent(choosecalcActivity.this,schoolresultActivity.class);
+                Intent SchoolResultIntent = new Intent(ChooseCalcActivity.this, SchoolResultActivity.class);
                 startActivity(SchoolResultIntent);
             }
         });
         lnrAgeCalc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent SquareIntent = new Intent(choosecalcActivity.this, agecalculatorActivity.class);
+                Intent SquareIntent = new Intent(ChooseCalcActivity.this, AgeCalculatorActivity.class);
                 startActivity(SquareIntent);
             }
         });

@@ -13,28 +13,28 @@
         android:theme="@style/Theme.MasterCalculator"
         tools:targetApi="31">
         <activity
-            android:name=".aboutusActivity"
+            android:name=".AboutUsActivity"
             android:exported="false" />
         <activity
-            android:name=".agecalculatorActivity"
+            android:name=".AgeCalculatorActivity"
             android:exported="false" />
         <activity
-            android:name=".schoolresultActivity"
+            android:name=".SchoolResultActivity"
             android:exported="false" />
         <activity
-            android:name=".emiActivity"
+            android:name=".EmiActivity"
             android:exported="false" />
         <activity
-            android:name=".discountActivity"
+            android:name=".DiscountActivity"
             android:exported="false" />
         <activity
-            android:name=".interestActivity"
+            android:name=".InterestActivity"
             android:exported="false" />
         <activity
-            android:name=".mutualFundActivity"
+            android:name=".MutualFundActivity"
             android:exported="false" />
         <activity
-            android:name=".choosecalcActivity"
+            android:name=".ChooseCalcActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

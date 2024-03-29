@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".mutualFundActivity">
+    tools:context=".MutualFundActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -65,7 +65,6 @@
             android:textColor="@color/black"
             android:backgroundTint="@color/white"
             android:hint="500"
-            android:text="1000"
             android:inputType="number"
             android:paddingLeft="10dp"/>
         </LinearLayout>
@@ -100,7 +99,6 @@
                 android:backgroundTint="@color/white"
                 android:textColor="@color/black"
                 android:hint="25%"
-                android:text="10"
                 android:inputType="numberDecimal"
                 android:paddingLeft="10dp"/>
         </LinearLayout>
@@ -135,7 +133,6 @@
                 android:backgroundTint="@color/white"
                 android:textColor="@color/black"
                 android:hint="05"
-                android:text="10"
                 android:inputType="number"
                 android:paddingLeft="10dp"/>
         </LinearLayout>
@@ -175,83 +172,66 @@
             android:gravity="center"
             android:layout_weight="1"/>
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_margin="20dp">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Invested"
             android:layout_weight="1"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:text="Invested"
-                android:textSize="20dp"
-                android:textColor="@color/black"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:padding="10dp"
-                android:textStyle="bold"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="---"
-                android:textSize="40dp"
-                android:gravity="center"
-                android:layout_gravity="center"
-                android:textColor="@color/black"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Est.Return"
             android:layout_weight="1"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:text="Est.Returns"
-                android:textSize="20dp"
-                android:textColor="@color/black"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:padding="10dp"
-                android:textStyle="bold"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="---"
-                android:textSize="40dp"
-                android:gravity="center"
-                android:layout_gravity="center"
-                android:textColor="@color/black"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Total"
             android:layout_weight="1"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:text="Total Values"
-                android:textSize="20dp"
-                android:textColor="@color/black"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:padding="10dp"
-                android:textStyle="bold"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="---"
-                android:textSize="40dp"
-                android:gravity="center"
-                android:layout_gravity="center"
-                android:textColor="@color/black"/>
-        </LinearLayout>
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txtAnsMFInv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="---"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+        <TextView
+            android:id="@+id/txtAnsMFEstRet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="---"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+        <TextView
+            android:id="@+id/txtAnsMFTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="---"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
     </LinearLayout>
 </LinearLayout>

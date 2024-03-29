@@ -6,15 +6,10 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-public class mutualFundActivity extends AppCompatActivity {
+public class MutualFundActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +22,9 @@ public class mutualFundActivity extends AppCompatActivity {
         EditText edtMYear = findViewById(R.id.edtMYear);
         TextView txtMClear = findViewById(R.id.txtMClear);
         TextView txtMCalculate = findViewById(R.id.txtMCalculate);
+        TextView txtAnsMFInv = findViewById(R.id.txtAnsMFInv);
+        TextView txtAnsMFEstRet = findViewById(R.id.txtAnsMFEstRet);
+        TextView txtAnsMFTotal = findViewById(R.id.txtAnsMFTotal);
 
         lnrMBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +39,9 @@ public class mutualFundActivity extends AppCompatActivity {
                 edtMInvest.setText("");
                 edtMReturn.setText("");
                 edtMYear.setText("");
+                txtAnsMFInv.setText("---");
+                txtAnsMFEstRet.setText("---");
+                txtAnsMFTotal.setText("---");
             }
         });
         txtMCalculate.setOnClickListener(new View.OnClickListener() {
@@ -64,6 +65,22 @@ public class mutualFundActivity extends AppCompatActivity {
                 else
                 {
 //                    Log.e("TAG", "onClick: ================ "+ans );
+                    //M = P × ({[1 + i]^n – 1} / i) × (1 + i).
+                    //M = 1,000X ({[1 +0.01 ]^{12} – 1} / 0.01) x (1 + 0.01)
+                    int p = Integer.parseInt(monInvest);
+                    double i = Double.parseDouble(expReturn)/100/12;
+                    int n = Integer.parseInt(timeYear)*12;
+                    double total = p*((Math.pow(1+i,n)-1)/i)*(i+1);
+                    int totInv = (p*n);
+                    double estRet = total-totInv;
+
+                    estRet=Math.floor(estRet);
+                    total=Math.floor(total);
+
+                    txtAnsMFInv.setText(""+totInv);
+                    txtAnsMFEstRet.setText(""+estRet);
+                    txtAnsMFTotal.setText(""+total);
+
                 }
             }
         });
