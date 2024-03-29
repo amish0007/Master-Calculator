@@ -177,18 +177,17 @@
             android:layout_marginTop="40dp">
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="wrap_content"
                 android:text="Interest Amount"
-                android:textSize="20dp"
+                android:textSize="18dp"
                 android:textColor="@color/black"
-                android:padding="10dp"
-                android:textStyle="bold"/>
+                android:padding="10dp"/>
             <TextView
                 android:id="@+id/txtIAnsIntAmount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="---"
-                android:textSize="40dp"
+                android:textSize="18dp"
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:textColor="@color/black"/>

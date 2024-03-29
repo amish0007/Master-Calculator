@@ -181,7 +181,6 @@
                 android:layout_height="wrap_content"
                 android:text="Interest Amount"
                 android:gravity="center"
-                android:textStyle="bold"
                 android:textColor="@color/black"
                 android:textSize="18dp"/>
             <TextView
@@ -190,7 +189,6 @@
                 android:layout_height="wrap_content"
                 android:text="---"
                 android:gravity="center"
-                android:textStyle="bold"
                 android:textColor="@color/black"
                 android:textSize="18dp"/>
         </LinearLayout>
@@ -205,7 +203,6 @@
                 android:layout_height="wrap_content"
                 android:text="Total Interest"
                 android:gravity="center"
-                android:textStyle="bold"
                 android:textColor="@color/black"
                 android:textSize="18dp"/>
             <TextView
@@ -214,7 +211,6 @@
                 android:layout_height="wrap_content"
                 android:text="---"
                 android:gravity="center"
-                android:textStyle="bold"
                 android:textColor="@color/black"
                 android:textSize="18dp"/>
         </LinearLayout>
@@ -231,7 +227,6 @@
             android:layout_height="wrap_content"
             android:text="Total Payable Amount"
             android:gravity="center"
-            android:textStyle="bold"
             android:textColor="@color/black"
             android:textSize="18dp"/>
         <TextView
@@ -240,7 +235,6 @@
             android:layout_height="wrap_content"
             android:text="---"
             android:gravity="center"
-            android:textStyle="bold"
             android:textColor="@color/black"
             android:textSize="18dp"/>
     </LinearLayout>

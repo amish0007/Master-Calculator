@@ -74,12 +74,10 @@ public class MutualFundActivity extends AppCompatActivity {
                     int totInv = (p*n);
                     double estRet = total-totInv;
 
-                    estRet=Math.floor(estRet);
-                    total=Math.floor(total);
 
                     txtAnsMFInv.setText(""+totInv);
-                    txtAnsMFEstRet.setText(""+estRet);
-                    txtAnsMFTotal.setText(""+total);
+                    txtAnsMFEstRet.setText(String.format("%.2f",estRet));
+                    txtAnsMFTotal.setText(String.format("%.2f",total));
 
                 }
             }
