@@ -3,16 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".MutualFundActivity">
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".MutualFundActivity"
+    tools:visibility="visible">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:orientation="horizontal">
+
         <LinearLayout
             android:id="@+id/lnrAgeBack"
             android:layout_width="40dp"
@@ -21,85 +24,92 @@
             android:layout_marginTop="25dp"
             android:background="@drawable/transperent_shape"
             android:gravity="center">
+
             <ImageView
-                android:gravity="center"
                 android:layout_width="25dp"
                 android:layout_height="20dp"
-                android:background="@drawable/back_arrow"/>
+                android:background="@drawable/back_arrow"
+                android:gravity="center" />
         </LinearLayout>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Age Calculator"
             android:gravity="center"
+            android:text="Age Calculator"
             android:textColor="@color/black"
-            android:textSize="18dp"/>
+            android:textSize="18dp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp">
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Date of Birth"
             android:gravity="center_vertical"
             android:paddingLeft="10dp"
+            android:text="Date of Birth"
             android:textColor="@color/black"
             android:textSize="15dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
             android:layout_weight="1"
             android:background="@drawable/transperent_rect"
-            android:layout_marginLeft="10dp"
-            android:orientation="horizontal"
-            android:layout_gravity="center">
+            android:orientation="horizontal">
+
             <EditText
                 android:id="@+id/edtBDate"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:textColor="@color/black"
                 android:backgroundTint="@color/white"
-                android:hint="Date"
                 android:gravity="center"
-                android:inputType="date"/>
+                android:hint="Date"
+                android:inputType="date"
+                android:textColor="@color/black" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_gravity="center"
             android:layout_marginLeft="10dp"
+            android:layout_weight="1"
             android:background="@drawable/transperent_rect"
-            android:orientation="horizontal"
-            android:layout_gravity="center">
+            android:orientation="horizontal">
+
             <EditText
                 android:id="@+id/edtBMonth"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:textColor="@color/black"
                 android:backgroundTint="@color/white"
+                android:gravity="center"
                 android:hint="Month"
                 android:inputType="date"
-                android:gravity="center"/>
+                android:textColor="@color/black" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/transperent_rect"
+            android:layout_gravity="center"
             android:layout_marginLeft="10dp"
             android:layout_weight="1"
-            android:orientation="horizontal"
-            android:layout_gravity="center">
+            android:background="@drawable/transperent_rect"
+            android:orientation="horizontal">
+
             <EditText
                 android:id="@+id/edtBYear"
 
@@ -107,10 +117,10 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/white"
-                android:textColor="@color/black"
+                android:gravity="center"
                 android:hint="Year"
                 android:inputType="date"
-                android:gravity="center"/>
+                android:textColor="@color/black" />
         </LinearLayout>
 
     </LinearLayout>
@@ -118,77 +128,82 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp">
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Present Date"
             android:gravity="center_vertical"
             android:paddingLeft="10dp"
+            android:text="Present Date"
             android:textColor="@color/black"
             android:textSize="15dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
             android:layout_weight="1"
             android:background="@drawable/transperent_rect"
-            android:layout_marginLeft="10dp"
-            android:orientation="horizontal"
-            android:layout_gravity="center">
+            android:orientation="horizontal">
+
             <EditText
                 android:id="@+id/edtPDate"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textColor="@color/black"
                 android:layout_weight="1"
                 android:backgroundTint="@color/white"
-                android:hint="Date"
                 android:gravity="center"
-                android:inputType="date"/>
+                android:hint="Date"
+                android:inputType="date"
+                android:textColor="@color/black" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_gravity="center"
             android:layout_marginLeft="10dp"
+            android:layout_weight="1"
             android:background="@drawable/transperent_rect"
-            android:orientation="horizontal"
-            android:layout_gravity="center">
+            android:orientation="horizontal">
+
             <EditText
                 android:id="@+id/edtPMonth"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textColor="@color/black"
                 android:layout_weight="1"
                 android:backgroundTint="@color/white"
+                android:gravity="center"
                 android:hint="Month"
                 android:inputType="date"
-                android:gravity="center"/>
+                android:textColor="@color/black" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/transperent_rect"
+            android:layout_gravity="center"
             android:layout_marginLeft="10dp"
             android:layout_weight="1"
-            android:orientation="horizontal"
-            android:layout_gravity="center">
+            android:background="@drawable/transperent_rect"
+            android:orientation="horizontal">
+
             <EditText
                 android:id="@+id/edtPYear"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:textColor="@color/black"
                 android:backgroundTint="@color/white"
+                android:gravity="center"
                 android:hint="Year"
                 android:inputType="date"
-                android:gravity="center"/>
+                android:textColor="@color/black" />
         </LinearLayout>
 
     </LinearLayout>
@@ -196,28 +211,30 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="43dp"
-        android:orientation="horizontal"
-        android:background="@drawable/rectbtn"
+        android:layout_gravity="center"
         android:layout_marginTop="40dp"
-        android:layout_gravity="center">
+        android:background="@drawable/rectbtn"
+        android:orientation="horizontal">
+
         <TextView
             android:id="@+id/txtAgeCalculate"
             android:layout_width="match_parent"
             android:layout_height="43dp"
+            android:layout_weight="1"
+            android:gravity="center"
             android:text="Calculate"
             android:textColor="@color/white"
-            android:textSize="20dp"
-            android:gravity="center"
-            android:layout_weight="1"/>
+            android:textSize="20dp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="30dp"
         android:layout_gravity="center"
-        android:gravity="center">
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -225,7 +242,8 @@
             android:text="Age:"
             android:textColor="@color/back"
             android:textSize="20dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/txtAgeAnsYear"
             android:layout_width="wrap_content"
@@ -234,7 +252,8 @@
             android:text=" "
             android:textColor="@color/back"
             android:textSize="20dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/txtAgeAnsMonth"
             android:layout_width="wrap_content"
@@ -243,7 +262,8 @@
             android:text=" "
             android:textColor="@color/back"
             android:textSize="20dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/txtAgeAnsDate"
             android:layout_width="wrap_content"
@@ -252,6 +272,6 @@
             android:text=" "
             android:textColor="@color/back"
             android:textSize="20dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
     </LinearLayout>
 </LinearLayout>

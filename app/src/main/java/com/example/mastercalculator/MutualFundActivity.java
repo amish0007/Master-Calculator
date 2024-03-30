@@ -64,9 +64,6 @@ public class MutualFundActivity extends AppCompatActivity {
                 }
                 else
                 {
-//                    Log.e("TAG", "onClick: ================ "+ans );
-                    //M = P × ({[1 + i]^n – 1} / i) × (1 + i).
-                    //M = 1,000X ({[1 +0.01 ]^{12} – 1} / 0.01) x (1 + 0.01)
                     int p = Integer.parseInt(monInvest);
                     double i = Double.parseDouble(expReturn)/100/12;
                     int n = Integer.parseInt(timeYear)*12;
@@ -74,11 +71,10 @@ public class MutualFundActivity extends AppCompatActivity {
                     int totInv = (p*n);
                     double estRet = total-totInv;
 
-
                     txtAnsMFInv.setText(""+totInv);
                     txtAnsMFEstRet.setText(String.format("%.2f",estRet));
                     txtAnsMFTotal.setText(String.format("%.2f",total));
-
+                    Log.v("TAG", "onClick: ================ "+total );
                 }
             }
         });

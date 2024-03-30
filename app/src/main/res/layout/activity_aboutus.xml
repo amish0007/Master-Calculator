@@ -16,6 +16,7 @@
             android:id="@+id/lnrAboutBack"
             android:layout_width="40dp"
             android:layout_height="40dp"
+            android:orientation="vertical"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="25dp"
             android:background="@drawable/transperent_shape"
@@ -28,8 +29,9 @@
                 android:backgroundTint="@color/white"/>
         </LinearLayout>
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:text="About Us"
             android:textColor="@color/white"
             android:gravity="center"
