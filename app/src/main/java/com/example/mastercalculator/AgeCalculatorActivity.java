@@ -92,7 +92,7 @@ public class AgeCalculatorActivity extends AppCompatActivity
                     }
                     else
                     {
-                        if(CMonth<BiMonth || CDate<BiDate)
+                        if(CMonth<BiMonth)
                         {
                             Year = Year-1;
                             CMonth = CMonth+12;
